@@ -8,16 +8,17 @@
     <script type="module" src="index.js"></script>
   </head>
   <body>
-    <h1>Kodeloftets Barometer</h1>
+    <h1 class="text-green">Kodeloftets Barometer</h1>
 
-    <p>Hvor gøy er sommerfesten</p>
+    <p> Hvor gøy er sommerfesten </p>
 
-    <div>
-      <button id="button-a">Kunne vært pener vær</button>
-      <button id="button-b">Velkomst drinken var god</button>
-      <button id="button-c">Når begynner lekene</button>
+    <div class="flex-column gap-small">
+      <button id="button-a" class="hover:lysne raised bg-color-a text-large padding-medium"> Kunne vært penere vær </button>
+      <button id="button-c" class="active:sunken bg-color-b text-large padding-medium rounded"> Når begynner lekene </button>
+      <button id="button-b" class="active:sunken bg-color-c text-large padding-medium rounded"> Velkomst drinken var god </button>
+      <button id="button-a"> Velkomst</button>
     </div>
 
-    <a id="result-link">Result</a>
+    <a id="result-link"> Result </a>
   </body>
 </html>
