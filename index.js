@@ -10,6 +10,10 @@ let countA = 0;
 let countB = 0;
 let countC = 0;
 
+
+let Comment = document.getElementById("click-comment");
+
+
 // Vi må beskrive hva som skal skje når de trykkes på
 function handleButtonAClick() {
   // Først oppdater den global variabelen
@@ -17,6 +21,13 @@ function handleButtonAClick() {
 
   // Generer lenke på nytt
   resultLink.href = "result.html?a=" + countA + "&b=" + countB + "&c=" + countC;
+ 
+  
+
+  setTimeout(
+    () => {},
+    5000
+  )
 }
 
 function handleButtonBClick() {
@@ -24,6 +35,8 @@ function handleButtonBClick() {
 
   // Generer lenke på nytt
   resultLink.href = "result.html?a=" + countA + "&b=" + countB + "&c=" + countC;
+
+
 }
 
 function handleButtonCClick() {
@@ -37,3 +50,6 @@ function handleButtonCClick() {
 buttonA.addEventListener("click", handleButtonAClick);
 buttonB.addEventListener("click", handleButtonBClick);
 buttonC.addEventListener("click", handleButtonCClick);
+
+// Kommentar når man trykker på knapp
+

@@ -10,15 +10,25 @@
   <body>
     <h1 class="text-green">Kodeloftets Barometer</h1>
 
+<div class="flex justify-between">
+
     <p> Hvor gøy er sommerfesten </p>
 
+<p  id="click-comment" class="hide"> Beskjed </p>
+
+</div>
+
     <div class="flex-column gap-small">
-      <button id="button-a" class="hover:lysne raised bg-color-a text-large padding-medium"> Kunne vært penere vær </button>
-      <button id="button-c" class="active:sunken bg-color-b text-large padding-medium rounded"> Når begynner lekene </button>
-      <button id="button-b" class="active:sunken bg-color-c text-large padding-medium rounded"> Velkomst drinken var god </button>
-      <button id="button-a"> Velkomst</button>
+      <button id="button-a" class="hover:lysne raised active:sunken bg-color-a text-large padding-medium rounded"> Kunne vært penere vær </button>
+      <button id="button-c" class="hover:lysne raised active:sunken bg-color-b text-large padding-medium rounded"> Når begynner lekene </button>
+      <button id="button-b" class="hover:lysne raised active:sunken bg-color-c text-large padding-medium rounded"> Velkomst drinken var god </button>
     </div>
 
-    <a id="result-link"> Result </a>
+    <div class="padding-medium">
+      <a class="text-large raised" id="result-link"> Result </a>
+    </div>
+
   </body>
+
+
 </html>
